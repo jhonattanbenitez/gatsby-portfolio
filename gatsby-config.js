@@ -24,19 +24,16 @@ module.exports = {
         name: `assets`,
         path: `${__dirname}/src/assets/`,
       },
-    },
+    },  
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `http://165.232.151.50/`,
         queryLimit: 1000, // Default to 100
-        //   contentTypes : `jobs`, `projects`, `blogs`,
-        //   singleType : `about`
-        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [],
-        singleTypes: [],
+        contentTypes: [`jobs`],
       },
     },
+
     // {
     //   resolve: `gatsby-plugin-webfonts`,
     //   options: {
